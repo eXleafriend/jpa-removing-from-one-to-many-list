@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.leafriend.yacl</groupId>
+  <artifactId>yacl</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <!-- General Information -->
+  <name>YACL</name>
+  <description>YACL: Yet Another Convenient Library</description>
+  <url>http://yacl.leafriend.com/</url>
+  <inceptionYear>2016</inceptionYear>
+
+  <!-- Development Information -->
+  <scm>
+    <developerConnection>scm:git:https://github.com/leafriend/yacl.git</developerConnection>
+    <url>https://github.com/leafriend/yacl</url>
+  </scm>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/leafriend/yacl/issues</url>
+  </issueManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <plugin.compiler.version>3.5</plugin.compiler.version>
+    <dependency.junit.version>4.12</dependency.junit.version>
+    <dependency.org.hamcrest.version>1.3</dependency.org.hamcrest.version>
+    <dependency.org.mockito.version>2.0.40-beta</dependency.org.mockito.version>
+    <dependency.org.slf4j.version>1.7.14</dependency.org.slf4j.version>
+    <dependency.ch.qos.logback.version>1.1.3</dependency.ch.qos.logback.version>
+  </properties>
+
+  <dependencies>
+
+    <!-- Testing: JUnit, Hamcrest & Mockito -->
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${dependency.junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+      <version>${dependency.org.hamcrest.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>${dependency.org.mockito.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Logging: SLF4J using LogBack -->
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${dependency.org.slf4j.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${dependency.ch.qos.logback.version}</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${plugin.compiler.version}</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+</project>
