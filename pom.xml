@@ -2,26 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.leafriend.yacl</groupId>
-  <artifactId>yacl</artifactId>
+  <groupId>com.leafriend.ex</groupId>
+  <artifactId>jpa-removing-from-one-to-many-list</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
-
-  <!-- General Information -->
-  <name>YACL</name>
-  <description>YACL: Yet Another Convenient Library</description>
-  <url>http://yacl.leafriend.com/</url>
-  <inceptionYear>2016</inceptionYear>
-
-  <!-- Development Information -->
-  <scm>
-    <developerConnection>scm:git:https://github.com/leafriend/yacl.git</developerConnection>
-    <url>https://github.com/leafriend/yacl</url>
-  </scm>
-  <issueManagement>
-    <system>GitHub</system>
-    <url>https://github.com/leafriend/yacl/issues</url>
-  </issueManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
